@@ -7,7 +7,9 @@ let dinero_juan = parseInt(prompt("¿Cual es tu presupuesto Juan?"));
 
 if (dinero_juan >= valor_boleta) {
     var amigos_invitados = Math.floor(dinero_juan/valor_boleta);
+    var valor_sobrante = dinero_juan-(amigos_invitados*valor_boleta);
 }
 
 
 alert("Puedes invitar a: " + amigos_invitados+ " Amigos");
+alert("A juan le sobran " + valor_sobrante);
